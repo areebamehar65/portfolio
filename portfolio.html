@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areeba Portfolio</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f7fa; color:#333; }
+    
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2c7a7b);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      width:120px; height:120px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      position: sticky; top:0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #2c7a7b; }
+
+    .section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #2c7a7b;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills li {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .skills li:hover { background: #2c7a7b; }
+
+    .portfolio .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .portfolio .item {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .portfolio .item:hover {
+      transform: scale(1.05);
+    }
+    .portfolio .item img {
+      width:100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .contact p { margin: 10px 0; }
+    .contact a { color: #4CAF50; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c7a7b;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <img src="C:\Users\lenovo\Documents\muslim-hijab-girl-Hidden-Face-Dp.jpg" alt="Profile Photo">
+    <h1>Areeba's Portfolio</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div id="about" class="section about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I’m <b>Areeba</b>, an enthusiastic fresher in the field of web development.  
+    I have a strong interest in designing and building user-friendly websites using 
+    <b>HTML, CSS, and basic Java</b>, and I am exploring tools like <b>Figma</b> for design.  
+    I enjoy learning new technologies, solving problems, and continuously improving my skills.  
+  </p>
+  <p>
+    As a beginner, I have worked on small projects such as a portfolio website, a 
+    calculator, and a to-do app, which helped me gain hands-on experience.  
+    My goal is to grow into a professional web developer and contribute creative 
+    and practical solutions in the tech industry.
+  </p>
+</div>
+
+
+  <div id="skills" class="section skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>java</li>
+      <li>Figma</li>
+       <li>Designing</li>
+    </ul>
+  </div>
+
+ <div id="portfolio" class="section portfolio">
+  <h2>Portfolio</h2>
+  <div class="items">
+    
+    <div class="item">
+      <img src="C:\Users\lenovo\Documents\1.png" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>A responsive portfolio website using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="item">
+      <img src="C:\Users\lenovo\Documents\2.jpeg" alt="Calculator App">
+      <h3>Calculator App</h3>
+      <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="item">
+      <img src="C:\Users\lenovo\Documents\3.jpg" alt="To-Do App">
+      <h3>To-Do List App</h3>
+      <p>A task management app where users can add and delete tasks.</p>
+    </div>
+
+    <div class="item">
+      <img src="C:\Users\lenovo\Documents\4.jpg" alt="Figma Design">
+      <h3>Figma Design</h3>
+      <p>UI/UX design sample created in Figma for a mobile app.</p>
+    </div>
+
+  </div>
+</div>
+
+
+  <div id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:areebamehar65@gmail.com">areebamehar65@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/areeba-se33340" target="_blank">linkedin.com/in/areeba-se33340</a></p>
+  </div>
+
+  <footer>
+    © 2025 Areeba | All Rights Reserved
+  </footer>
+
+</body>
+</html>
